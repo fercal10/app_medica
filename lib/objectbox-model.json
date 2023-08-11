@@ -1,0 +1,156 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7757319827697489290",
+      "lastPropertyId": "4:4697887990949968602",
+      "name": "Cita",
+      "properties": [
+        {
+          "id": "1:1963588222913367581",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4206950246316895722",
+          "name": "comentario",
+          "type": 9
+        },
+        {
+          "id": "3:2215689326053895248",
+          "name": "pacienteId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:3314253015589066474",
+          "relationTarget": "Paciente"
+        },
+        {
+          "id": "4:4697887990949968602",
+          "name": "fecha",
+          "type": 12
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:7709307179620270703",
+      "lastPropertyId": "8:6453429053291277814",
+      "name": "Consulta",
+      "properties": [
+        {
+          "id": "1:469279858068553856",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1707399692121547709",
+          "name": "motivo",
+          "type": 9
+        },
+        {
+          "id": "3:2650047778352617029",
+          "name": "efermedadActual",
+          "type": 9
+        },
+        {
+          "id": "4:5019322202663308587",
+          "name": "diganostico",
+          "type": 9
+        },
+        {
+          "id": "5:2900991903881254200",
+          "name": "indicaciones",
+          "type": 9
+        },
+        {
+          "id": "6:6659211114962231793",
+          "name": "tratamiento",
+          "type": 30
+        },
+        {
+          "id": "7:4855628594462975776",
+          "name": "pacienteId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:7589664428840973352",
+          "relationTarget": "Paciente"
+        },
+        {
+          "id": "8:6453429053291277814",
+          "name": "fecha",
+          "type": 12
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:6255118462470147490",
+      "lastPropertyId": "9:6709343767120663400",
+      "name": "Paciente",
+      "properties": [
+        {
+          "id": "1:832374907168106102",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3923872012515556377",
+          "name": "nombre",
+          "type": 9
+        },
+        {
+          "id": "3:3613998360576638566",
+          "name": "apellido",
+          "type": 9
+        },
+        {
+          "id": "4:6811303856593418142",
+          "name": "telefono",
+          "type": 9
+        },
+        {
+          "id": "5:7020942170749656252",
+          "name": "direccion",
+          "type": 9
+        },
+        {
+          "id": "6:8163752579683679808",
+          "name": "sexo",
+          "type": 9
+        },
+        {
+          "id": "7:6709096979640701031",
+          "name": "ocupacion",
+          "type": 9
+        },
+        {
+          "id": "8:4247625926955675919",
+          "name": "cedula",
+          "type": 6
+        },
+        {
+          "id": "9:6709343767120663400",
+          "name": "fechaNacimiento",
+          "type": 12
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:6255118462470147490",
+  "lastIndexId": "2:7589664428840973352",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
